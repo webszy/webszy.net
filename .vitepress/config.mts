@@ -4,21 +4,35 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "水煮鱼资源站",
   description: "抖音：水煮鱼写前端，分享前端技术、资源、工具、经验。",
-  head: [['link', { rel: 'icon', href: '/logo.jpg' }]],
+  head: [['link', { rel: 'icon', href: './logo.jpg' }]],
+  srcDir:'src',
+  outDir:'dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo:'/logo.png',
+    logo:'./logo.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '代码分享', link: '/shared-code' }
+      { text: '代码分享', link: '/shared-code/' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '水煮鱼资源站',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '代码分享', link: '/shared-code/',
+            // items:[
+            //   { text: 'CSS相关', link: '/shared-code/css' },
+            //   { text: 'JS相关', link: '/shared-code/js' },
+            //   { text: 'Vue相关', link: '/shared-code/vue' },
+            // ]
+          },
+          { text: '免费资源', link: '/free-for-dev/',
+            items: [
+              { text: '静态托管', link: '/free-for-dev/host'},
+              { text: '图床', link: '/free-for-dev/image'},
+              { text: '服务器', link: '/free-for-dev/'}
+            ]
+          }
         ]
       }
     ],
@@ -34,6 +48,18 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present 水煮鱼(webszy)'
-    }
+    },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+
+    outline: {
+      label: '页面导航'
+    },
+
+    lastUpdated: {
+      text: '最后更新于'
+    },
   }
 })

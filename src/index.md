@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 代码分享
-      link: /shared-code
+      link: /shared-code/
     - theme: alt
       text: 免费资源
-      link: /free4dev
+      link: /free-for-dev/
   image:
     src: /img.png
     alt: 水煮鱼写前端
