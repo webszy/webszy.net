@@ -23,11 +23,15 @@ export default defineConfig({
         text: '水煮鱼资源站',
         items: [
           { text: '代码分享', link: '/shared-code/',
-            // items:[
-            //   { text: 'CSS相关', link: '/shared-code/css' },
-            //   { text: 'JS相关', link: '/shared-code/js' },
-            //   { text: 'Vue相关', link: '/shared-code/vue' },
-            // ]
+            items:[
+              { text: 'HTML相关', link: '/shared-code/html' },
+              { text: 'JS相关', link: '/shared-code/js' },
+              { text: '重置默认样式', link: '/shared-code/reset-style' },
+              { text: 'Flex布局', link: '/shared-code/flexbox' },
+              { text: 'Grid布局', link: '/shared-code/gridLayout' },
+              { text: 'Vue相关', link: '/shared-code/vue' },
+              { text: 'Vue->React', link: '/shared-code/vue2react' },
+            ]
           },
           { text: '免费资源', link: '/free-for-dev/',
             items: [
