@@ -31,6 +31,8 @@ export default defineConfig({
               { text: 'Grid布局', link: '/shared-code/gridLayout' },
               { text: 'Vue相关', link: '/shared-code/vue' },
               { text: 'Vue->React', link: '/shared-code/vue2react' },
+              { text: 'PWA相关', link: '/shared-code/pwa' },
+              { text: 'CSS组件分享', link: '/shared-code/css-components' },
             ]
           },
           { text: '免费资源', link: '/free-for-dev/',
