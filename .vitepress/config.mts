@@ -15,7 +15,8 @@ export default defineConfig({
     logo:'./logo.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '代码分享', link: '/shared-code/' }
+      { text: '代码分享', link: '/shared-code/' },
+      {  text: '面试分享', link: '/interview/', }
     ],
 
     sidebar: [
@@ -33,6 +34,13 @@ export default defineConfig({
               { text: 'Vue->React', link: '/shared-code/vue2react' },
               { text: 'PWA相关', link: '/shared-code/pwa' },
               { text: 'CSS组件分享', link: '/shared-code/css-components' },
+            ]
+          },
+          {
+            text: '面试分享',
+            link: '/interview/',
+            items: [
+              { text: '3月19日', link: '/interview/zkjz' },
             ]
           },
           { text: '免费资源', link: '/free-for-dev/',
