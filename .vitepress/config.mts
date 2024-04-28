@@ -43,6 +43,13 @@ export default defineConfig({
               { text: '3月19日', link: '/interview/zkjz' },
             ]
           },
+          {
+            text: '工作分享',
+            link: '/work/',
+            items: [
+              { text: '4月28日', link: '/work/428' },
+            ]
+          },
           { text: '免费资源', link: '/free-for-dev/',
             items: [
               { text: '静态托管', link: '/free-for-dev/host'},

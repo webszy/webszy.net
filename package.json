@@ -6,6 +6,7 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
+    "naive-ui": "^2.38.1",
     "vitepress": "^1.0.0-rc.44",
     "vue": "^3.4.21"
   }
